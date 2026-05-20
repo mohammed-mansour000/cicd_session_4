@@ -6,7 +6,7 @@ const empty = () => "";
 test("Renders Input Form", () => {
   render(<AddItem addItem={empty} />);
 
-  const taskElement = screen.getByText("Task1:");
+  const taskElement = screen.getByText("Task:");
   expect(taskElement).toBeInTheDocument();
 
   const priorityElement = screen.getByText("Priority:");
